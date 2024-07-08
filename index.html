@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Challenge</title>
+   <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+   <main class="presentacion">
+      <img id="logo-alura" src="./assets/logo-alura.png" alt="Logotipo de Alura">
+      <section class="presentacion__contenido__izquierda">
+
+         <textarea id="palabra" name="palabra" type="text" placeholder="Ingrese el texto aquí" rows="10"></textarea>
+
+         <div class="presentacion__contenido__izquierda__botones">
+            <div class="presentacion_contenido__izquierda__botones__texto">
+               <img src="./assets/signo-exclamacion.png" alt="Signo de exclamación"><p>Sólo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="presentacion__contenido__izquierda__botones__botones">
+               <button id="encriptar">Encriptar</button>
+               <button id="desencriptar">Desencriptar</button>
+            </div>
+            
+         </div>
+         
+
+      </section>
+
+      <section id="resultado__seccion" class="presentacion__contenido__derecha">
+         <img id="presentacion__contenido__derecha__imagen" src="./assets/buscando.png" alt="Imagen buscando texto">
+         <p id="resultado">
+            Ningún mensaje fue encontrado <br>
+            <span>Ingresa el texto que desees encriptar o desencriptar</span>
+         </p>
+         <div class="presentacion__contenido__derecha__button">
+            <button id="copiar">Copiar</button>
+         </div>
+         
+      </section>
+   </main>
+   <footer>Desarrollado por Raúl H. Díaz</footer>
+   <script src="script.js"></script>
+</body>
+</html>

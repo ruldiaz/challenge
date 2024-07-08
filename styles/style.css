@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* reseteando estilos */
+* {
+   padding: 0;
+   margin: 0;
+}
+
+:root {
+   --color-primario: #0A3871;
+   --color-secundario: #6B7178;
+   --color-terciario: #FFFFFF;
+   --color-cuaternario: #D8DFE8;
+   --color-quinario: #F3F5FC;
+   --color-sextario: #343A40;
+   --color-septenario: #495057;
+
+   --fuente-inter: "Inter", sans-serif;
+}
+
+body {
+   background-color: var(--color-quinario);
+}
+
+#logo-alura {
+   padding-left: 40px;
+   width: 120px;
+   height: 48px;
+}
+
+#palabra {
+   border: none;
+   font-family: var(--fuente-inter);
+   color: var(--color-primario);
+   font-size: 2rem;
+   margin-top: 15%;
+   background-color: var(--color-quinario);
+   resize:none; /* Previene el redimensionamiento del textarea */
+   width: 100%; /* Asegura que el textarea ocupe todo el ancho disponible */
+   padding: 10px; /* Añade un poco de padding para mejor apariencia */
+   overflow: hidden; /* Oculta cualquier barra de desplazamiento */
+   outline: none; /* Elimina el contorno cuando está enfocado */
+}
+
+#palabra::placeholder {
+   font-family: var(--fuente-inter);
+   color: var(--color-primario);
+   font-size: 2rem;
+   background-color: var(--color-quinario);
+}
+
+.presentacion {
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   gap: 5%;
+   height: 700px;
+}
+
+.presentacion__contenido__izquierda {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.presentacion__contenido__izquierda__botones__botones {
+   display: flex;
+   gap: 24px;
+}
+
+.presentacion_contenido__izquierda__botones__texto {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   margin-bottom: 16px;
+   font-family: var(--fuente-inter);
+   color: var(--color-secundario);
+   font-size: 0.75rem;
+}
+
+.presentacion_contenido__izquierda__botones__texto img{
+   width: 1rem;
+}
+
+.presentacion__contenido__izquierda__botones button{
+   width: 328px;
+   border-radius: 24px;
+   height: 67px;
+   border: none;
+   font-family: var(--fuente-inter);
+   font-size: 1rem;
+   align-items: center;
+}
+
+#copiar {
+   width: 328px;
+   border-radius: 24px;
+   height: 67px;
+   font-family: var(--fuente-inter);
+   font-size: 1rem;
+   color: var(--color-primario);
+   border: 1px solid var(--color-primario);
+   display: none;
+}
+
+#encriptar {
+   background-color: var(--color-primario);
+   color: var(--color-terciario);
+}
+
+#desencriptar {
+   
+   color: var(--color-primario);
+   border: 1px solid var(--color-primario);
+}
+
+.presentacion__contenido__derecha {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: var(--color-terciario);
+   border-radius: 2rem;
+   align-items: center;
+   gap: 32px;
+   width: 400px;
+   padding: 25px; 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+   margin-bottom: 0;
+}
+
+.presentacion__contenido__derecha__imagen {
+   width: 50%;
+}
+
+#resultado{
+   font-family: var(--fuente-inter);
+   font-weight: bold;
+   font-size: 1.5rem;
+   color: var(--color-sextario);
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 16px;
+   word-wrap: break-word; 
+   width: 100%; 
+   max-width: 336px; 
+   
+}
+
+#resultado span {
+   font-family: var(--fuente-inter);
+   font-weight: 400;
+   font-size: 1rem;
+   color: var(--color-septenario);  
+}
+
+footer {
+   text-align: center;
+   background-color: var(--color-secundario);
+   margin-top: 15px;
+   padding: 20px;
+   font-family: var(--fuente-inter);
+   color: var(--color-quinario);
+}
+
+@media (max-width: 768px) {
+
+
+   #logo-alura {
+      align-self: flex-start;
+   }
+   .presentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+   }
+
+   .presentacion__contenido__derecha {
+      width: 100%;
+   }
+
+   .presentacion__contenido__derecha img {
+      display: none;
+   }
+
+   #resultado {
+      width: 100%;
+      
+   }
+}
+
+@media (max-width: 375px) {
+   #logo-alura {
+      align-self: flex-start;
+   }
+   .presentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+   }
+   
+   .presentacion__contenido__izquierda__botones__botones {
+      align-items: center;
+      flex-direction: column;
+   }
+
+
+}
